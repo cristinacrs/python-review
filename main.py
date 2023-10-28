@@ -1,4 +1,5 @@
 user_option = input('Rock, scissors or paper? ')
+user_option = user_option.lower()
 computer_option = 'rock'
 
 if user_option == computer_option:
