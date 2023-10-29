@@ -1,6 +1,16 @@
+import random
+
+options = ('rock', 'paper', 'scissors')
+
 user_option = input('Rock, scissors or paper? ')
 user_option = user_option.lower()
-computer_option = 'rock'
+computer_option = random.choice(options)
+
+if not user_option in options:
+    print('Invalid choice !!')
+
+print('User option =>', user_option)
+print('Computer option =>', computer_option)
 
 if user_option == computer_option:
     print('Tie!')
